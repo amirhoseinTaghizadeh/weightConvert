@@ -1,22 +1,22 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "weightconvert/simpleweightconvert",
+    "description": "A simple Package to Easily Convert Weight",
     "keywords": [
-        ":vendor_name",
+        "WeightConvert",
         "laravel",
-        ":package_slug"
+        "simpleweightconvert"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/weightconvert/simpleweightconvert",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Amirhossein Taghizadeh",
+            "email": "taghizadehamirhosein9@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.1",
         "spatie/laravel-package-tools": "^1.16",
         "illuminate/contracts": "^10.0||^11.0"
     },
@@ -35,19 +35,19 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "WeightConvert\\SimpleWeightConvert\\": "src/",
+            "WeightConvert\\SimpleWeightConvert\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "WeightConvert\\SimpleWeightConvert\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
-        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "clear": "@php vendor/bin/testbench package:purge-simpleweightconvert --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": [
             "@composer run prepare",
@@ -73,10 +73,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "WeightConvert\\SimpleWeightConvert\\SimpleWeightConvertServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "SimpleWeightConvert": "WeightConvert\\SimpleWeightConvert\\Facades\\SimpleWeightConvert"
             }
         }
     },
